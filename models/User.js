@@ -1,0 +1,1 @@
+// Establece las caracteristicas de los documentos de usuarios enla base de datos

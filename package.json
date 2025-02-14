@@ -1,0 +1,15 @@
+{
+  "name": "project-break-2",
+  "version": "1.0.0",
+  "description": "En este ejercicio solo vamos a crear la estructura de carpetas y archivos que vamos a necesitar para el proyecto.  No tienes que implementar lógica, ni levantar servidor, solo crear la estructura en VSC y subir tu repositorio.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
