@@ -1,0 +1,29 @@
+{
+  "name": "project-break-2",
+  "version": "1.0.0",
+  "description": "Este proyecto es una aplicación para la venta de ropa que permite a los usuarios explorar un catálogo de productos general o por categorías. También incluye un panel de administración, accesible mediante login con usuario y contraseña, para gestionar productos y eliminarlos.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "Alejandro Prados",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "1.4.6",
+    "dotenv": "16.4.7",
+    "express": "4.21.2",
+    "firebase": "10.13.1",
+    "firebase-admin": "12.5.0",
+    "mongoose": "8.9.6",
+    "swagger-ui-express": "5.0.1"
+  },
+  "devDependencies": {
+    "jest": "29.7.0",
+    "supertest": "7.0.0"
+  }
+}

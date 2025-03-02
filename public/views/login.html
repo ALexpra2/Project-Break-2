@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Login</title>
+</head>
+<body class="authentication">
+    <div class="auth-form">
+    <h1>Login</h1>
+    <form id="loginForm" method="post">
+        <input type="email" name="email" id="email" placeholder="Introduce tu email" required>
+        <input type="password" name="password" id="password" placeholder="Introduce tu contraseña" required>
+        <button type="submit" id="loginButton">Iniciar sesión</button>
+    </form>
+    <a href="/register">Pulsa para resgistrarte</a>
+   </div>
+
+    <!-- ponemos type=module porque en el archivo js que estamos importando hay importaciones -->
+    <script type="module" src="../utils/configLogin.js"></script>
+</body>
+</html>

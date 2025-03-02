@@ -1,0 +1,279 @@
+/*! Estilos globales */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin:0px;
+    padding: 0;
+}
+
+
+nav {
+    background-color: black;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: #d3d3d3;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+p {
+    margin:0px;
+    padding: 0px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333; 
+    margin-top: 30px;
+}
+
+/*! Contenedor de productos */
+#lista, #listaDashboard {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px; 
+    justify-content: center; 
+}
+
+/* Recuadro de cada producto */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+    height: 440px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05); 
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 280px; /*Limitamos el alto para que independientemente del tamaño de la imagen, no desborde del recuadro */
+    height:auto;
+    
+}
+
+.detalle {
+    margin-top: auto; /*para que el boton salga siempre abajo independientemente del tamaño de la imagen*/
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.detalle:hover {
+    background-color: #0056b3; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*!Estilo para  ver detalle */ 
+#productDetail {  
+    background-color: white;
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.2s ease-in-out;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap:7px
+}
+
+#productDetail img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding-bottom: 5px;
+}
+
+#productDetail button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    width: 80px;
+}
+
+#deleteBtn {
+    width: 80px;
+    margin-left: 110px;    
+}
+
+#productDetail button:hover {
+    background-color: #0056b3;
+}
+
+/*! Estilos de formularios */
+
+#productForm {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 320px;
+    margin: 50px auto; /* Centrado el contenedor del formulario automaticamente segun el tamaño */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #productForm label {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  #productForm input{
+    width: 290px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+  }
+
+  #productForm textarea{
+    width: 290px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+  }
+  #productForm select {
+    width: 310px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+  }
+  
+  #productForm button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 5px;
+  }
+  
+
+  #productForm button:hover {
+    background-color: #0056b3;
+  }
+
+  /*! Css especifico para el body de login y registro */
+.authentication {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.auth-form {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 380px;
+    text-align: center;
+}
+
+.auth-form h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.auth-form input {
+    width: 340px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.auth-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 10px;
+}
+
+.auth-form button:hover {
+    background-color: #0056b3;
+}
+
+.auth-form a {
+    display: block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+ }
+
+.auth-form a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+        gap:6px;   
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="/dashboard">Todos los productos</a></li>
+          <li><a href="/dashboard/pantalones">Pantalones</a></li>
+            <li><a href="/dashboard/zapatos">Zapatos</a></li>
+            <li><a href="/dashboard/accesorios">Accesorios</a></li>
+            <li><a href="/dashboard/camisetas">Camisetas</a></li>
+            <li><a href="/dashboard/new">Crear nuevo producto</a></li>
+            <li><form id="logoutForm" action="/logout" method="POST">
+              <button type="submit">Logout</button>
+          </form></li>
+        </ul>
+      </nav>
+    <h1>Bienvenido al Dashboard</h1>
+        
+    <h2>Lista de productos</h2>
+    <div id="products-list">
+        <ul id="listaDashboard"></ul>
+    </div>
+
+    <script src="../utils/scriptProducts.js"></script>    
+</body>
+</html>
